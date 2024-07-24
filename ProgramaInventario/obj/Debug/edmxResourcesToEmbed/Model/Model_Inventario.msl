@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="db_inventarioModelStoreContainer" CdmEntityContainer="Inventario_EntitiesDB">
+    <EntitySetMapping Name="inventario">
+      <EntityTypeMapping TypeName="db_inventarioModel.inventario">
+        <MappingFragment StoreEntitySet="inventario">
+          <ScalarProperty Name="Codigo" ColumnName="Codigo" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="Precio" ColumnName="Precio" />
+          <ScalarProperty Name="Cantidad" ColumnName="Cantidad" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="ingresar" FunctionName="db_inventarioModel.Store.ingresar" />
+  </EntityContainerMapping>
+</Mapping>
